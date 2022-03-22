@@ -6,13 +6,9 @@
     <test name="First">
 
 
-        <parameter name="db" value="SQL"></parameter>
 
-       <groups>
-           <run>
-               <include name="smokeTest"/>
-           </run>
-       </groups>
+
+
 
 
 

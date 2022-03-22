@@ -22,9 +22,9 @@ public class Test1 {
 
     @Parameters({"db"})
     //параметеризированные тесты. прописываем в хмл
-    @Test(groups = {"smokeTest", "regress"})
-    public void test1(String db) {
-        System.out.println("smoke.Test1" + db);
+    @Test  (dataProvider = "db")
+    public void test1(String e1, int e2) {
+        System.out.println("smoke.Test1 " + e1 + "" + e2 );
     }
 
     @Test(groups = {"regress"})
